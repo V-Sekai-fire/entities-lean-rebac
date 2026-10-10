@@ -176,8 +176,8 @@ theorem rebac_public_observe {n : Nat} (c : PlayerClaim n)
   unfold rebacCheck
   rcases maxRelation_ge c .«public» h with ⟨s, hs, he⟩
   rw [hs]
-  simp only [Action.minRelation, Relation.rank, decide_eq_true_eq]
-  exact Nat.zero_le _
+  simp only [Action.minRelation, Relation.rank]
+  exact decide_eq_true (Nat.zero_le _)
 
 /-- owner can perform any action. -/
 theorem rebac_owner_all {n : Nat} (c : PlayerClaim n)
