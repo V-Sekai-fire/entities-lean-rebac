@@ -9,7 +9,7 @@ package «lean-rebac-core» where
 -- Mathlib is only needed by the research-tier ReBAC module; the production
 -- NoGod core is Mathlib-free. Pinned to the toolchain line in lean-toolchain.
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git" @ "v4.30.0"
+  "https://github.com/leanprover-community/mathlib4.git" @ "v4.34.1"
 
 -- Relationship-based access-control hexagon (NoGod / ReBAC): dependency-free
 -- authorization core.
